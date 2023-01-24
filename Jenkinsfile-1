@@ -9,6 +9,7 @@ pipeline {
     stage('Example Deploy') {
       when {
         branch 'main'
+        sh 'main branch'
       }
       steps {
         sh 'echo Deploying'
